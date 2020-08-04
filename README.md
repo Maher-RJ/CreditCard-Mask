@@ -17,7 +17,7 @@ it will return whatever the last 4 characters  are then i pass this lastFour str
 Now in our maskif function we first check if our string has digits if(creditCardNumber.matches(".*\\d.*")); this regex will confirm us, if it is true, there are some digits, then we check if the first character of the string is digit then we get the digit and check if last 4 are digit  if yes then we get the string between first and last 4 and  replace if there are digits in that string and in the end concatenate creditCardNumber=firstDigit+restString+lastFour
 if first is digit and last four are not digit then in the else part i get the remaining string except first and replace all the digits with #
 
-```
+```java
 class CreditCard {
     public static void main(String[] args) {
         System.out.println(maskify("A234-AAAA-BBBB-ABCD"));
